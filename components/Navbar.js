@@ -63,7 +63,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#visites"
+            href="/reserver"
             className={`text-sm px-5 py-2 rounded-full border font-medium transition-all duration-300 ${
               scrolled
                 ? 'border-apple-600 text-apple-600 hover:bg-apple-600 hover:text-white'
@@ -114,7 +114,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#visites"
+            href="/reserver"
             onClick={() => setMenuOpen(false)}
             className="btn-primary text-center mt-2"
           >

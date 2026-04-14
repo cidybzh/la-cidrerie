@@ -60,8 +60,8 @@ export default function Hero() {
           <a href="#produits" className="btn-primary text-base px-10 py-4">
             Découvrir nos produits
           </a>
-          <a href="#visites" className="btn-outline text-base px-10 py-4">
-            Visites & dégustations
+          <a href="/reserver" className="btn-outline text-base px-10 py-4">
+            Réserver une visite
           </a>
         </div>
       </div>
