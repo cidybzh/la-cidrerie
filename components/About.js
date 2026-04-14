@@ -86,7 +86,7 @@ export default function About() {
             {
               icon: '🌳',
               title: 'Verger naturel',
-              text: 'Les pommes proviennent d'un verger naturel situé à Saint-Carreuc, sélectionnées pour leur richesse en arômes.',
+              text: "Les pommes proviennent d'un verger naturel situé à Saint-Carreuc, sélectionnées pour leur richesse en arômes.",
               color: 'from-apple-50 to-apple-100',
               border: 'border-apple-200',
             },

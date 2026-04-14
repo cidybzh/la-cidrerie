@@ -3,8 +3,8 @@ const products = [
     name: 'Cidre artisanal',
     subtitle: 'La Rainette',
     description:
-      'Notre premier cidre artisanal, fruit d'une fermentation naturelle soignée. Élaboré à partir de pommes sélectionnées dans nos vergers bretons, il exprime toute la fraîcheur et la complexité du terroir du Penthièvre.',
-    note: 'Disponible à partir d'avril 2026',
+      "Notre premier cidre artisanal, fruit d'une fermentation naturelle soignée. Élaboré à partir de pommes sélectionnées dans nos vergers bretons, il exprime toute la fraîcheur et la complexité du terroir du Penthièvre.",
+    note: "Disponible à partir d'avril 2026",
     available: false,
     details: ['Fermentation naturelle', 'Vergers bretons', '20 000 bouteilles'],
     gradient: 'from-cider-400 to-cider-600',

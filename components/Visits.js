@@ -7,7 +7,7 @@ const visitContent = [
   {
     step: '01',
     title: 'Accueil & présentation',
-    text: 'Découvrez l'histoire de la cidrerie, la fratrie Bouguet et leur vision d'un cidre artisanal breton authentique.',
+    text: "Découvrez l'histoire de la cidrerie, la fratrie Bouguet et leur vision d'un cidre artisanal breton authentique.",
   },
   {
     step: '02',
