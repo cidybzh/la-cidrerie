@@ -3,21 +3,21 @@ const products = [
     name: 'Cidre artisanal',
     subtitle: 'La Rainette',
     description:
-      "Notre premier cidre artisanal, fruit d'une fermentation naturelle soignée. Élaboré à partir de pommes sélectionnées dans nos vergers bretons, il exprime toute la fraîcheur et la complexité du terroir du Penthièvre.",
-    note: "Disponible à partir d'avril 2026",
-    available: false,
+      "Notre premier cidre. On a tout donné pour qu'il soit à la hauteur de ce qu'on avait promis — naturel, breton, fait à la main. Goûtez-le et dites-nous si on a tenu parole.",
+    note: 'Disponible dès maintenant',
+    available: true,
     details: ['Fermentation naturelle', 'Vergers bretons', '20 000 bouteilles'],
     gradient: 'from-cider-400 to-cider-600',
     bg: 'from-cider-50 to-amber-50',
-    badge: 'Bientôt disponible',
-    badgeColor: 'bg-cider-100 text-cider-700',
-    icon: '🍺',
+    badge: 'Disponible',
+    badgeColor: 'bg-apple-100 text-apple-700',
+    icon: '🌳',
   },
   {
     name: 'Jus de pomme',
     subtitle: 'Pur jus naturel',
     description:
-      'Pressé à froid depuis les pommes de notre verger naturel de Saint-Carreuc. Un jus pur, sans conservateurs ni additifs, qui concentre toute la douceur et la vivacité des pommes bretonnes.',
+      "Pressé à froid depuis notre verger de Saint-Carreuc. On n'a rien ajouté, rien enlevé. Juste la pomme, telle qu'elle est. C'est le premier produit qu'Eva a posé sur le marché d'Erquy — et les gens sont revenus.",
     note: 'Disponible dès maintenant',
     available: true,
     details: ['Sans conservateurs', 'Pressé à froid', 'Verger de Saint-Carreuc'],
@@ -33,7 +33,7 @@ export default function Products() {
   return (
     <section
       id="produits"
-      className="py-28"
+      className="py-16 md:py-28"
       style={{
         background: 'linear-gradient(180deg, #f7f5f0 0%, #fafaf7 100%)',
       }}
@@ -46,8 +46,8 @@ export default function Products() {
           </p>
           <h2 className="section-title">Du verger à la bouteille</h2>
           <p className="section-subtitle">
-            Deux produits artisanaux, élaborés avec soin à partir de pommes
-            bretonnes cultivées dans le respect de la nature.
+            Deux produits. Tout ce qu'on sait faire, tout ce qu'on aime,
+            dans chaque bouteille qu'on vous tend.
           </p>
         </div>
 
@@ -61,10 +61,10 @@ export default function Products() {
               {/* Top color bar */}
               <div className={`h-2 bg-gradient-to-r ${p.gradient}`} />
 
-              <div className="p-10">
+              <div className="p-6 md:p-10">
                 {/* Badge + icon */}
                 <div className="flex items-start justify-between mb-6">
-                  <span className="text-6xl">{p.icon}</span>
+                  <span className="text-6xl transition-transform duration-300 group-hover:scale-110 inline-block">{p.icon}</span>
                   <span
                     className={`text-xs font-semibold px-3 py-1.5 rounded-full ${p.badgeColor}`}
                   >
@@ -107,7 +107,7 @@ export default function Products() {
 
                 {/* Note */}
                 <div
-                  className={`rounded-xl px-4 py-3 text-sm font-medium ${
+                  className={`rounded-xl px-4 py-3 text-sm font-medium mb-4 ${
                     p.available
                       ? 'bg-apple-100 text-apple-700'
                       : 'bg-cider-100 text-cider-700'
@@ -115,6 +115,14 @@ export default function Products() {
                 >
                   {p.note}
                 </div>
+
+                {/* CTA */}
+                <a
+                  href="#contact"
+                  className="inline-block w-full text-center bg-apple-600 hover:bg-apple-700 text-white font-semibold text-sm rounded-xl px-6 py-3 transition-colors duration-200"
+                >
+                  Nous contacter pour commander
+                </a>
               </div>
             </div>
           ))}
@@ -122,16 +130,13 @@ export default function Products() {
 
         {/* Market info */}
         <div className="reveal mt-12 bg-white rounded-2xl border border-apple-100 shadow-sm p-8 flex flex-col md:flex-row items-center gap-6">
-          <span className="text-5xl">🛒</span>
           <div>
             <h4 className="font-serif text-xl font-semibold text-apple-800 mb-2">
               Retrouvez nos produits au marché
             </h4>
             <p className="text-bark-600">
-              Eva propose le jus de pomme chaque{' '}
-              <strong>samedi matin sur le marché d'Erquy</strong>. Venez à sa
-              rencontre pour découvrir les produits de la cidrerie et en apprendre
-              davantage sur notre démarche artisanale.
+              Chaque <strong>samedi matin au marché d'Erquy</strong>, Eva est là.
+              Venez lui parler. Elle vous racontera le reste mieux que n'importe quel site.
             </p>
           </div>
         </div>

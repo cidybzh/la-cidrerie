@@ -3,6 +3,7 @@
 import { useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
+import Manifeste from '../components/Manifeste'
 import About from '../components/About'
 import Products from '../components/Products'
 import Visits from '../components/Visits'
@@ -30,6 +31,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
+      <Manifeste />
       <About />
       <Products />
       <Visits />
